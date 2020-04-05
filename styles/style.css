@@ -14,12 +14,68 @@
     min-height: 600px;
     max-height: 756px;
     /* parameters for the header section */
+    border: 1px solid red;
+    display: flex;
 }
+
+.logo {
+  width: 154px;
+  height: 31px;
+  z-index: 2;
+  /* assuming 10 will be sufficient to keep it in the front */
+}
+
+.logo_position_absolute {
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  
+}
+
+.header__title {
+    align-self: center;
+    width: 730px;
+    margin-left: 64px;
+    z-index: 2;
+    
+   
+}
+
+.header__subtitle {
+    position: absolute;
+    left: 64px;
+    bottom: 30px;
+    width: 388px;
+    z-index: 2;
+    /* to keep it "in front of other blocks on smaller screens" */
+    
+    
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+
+
+.header__main-illustration {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+}
+
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
+    position: absolute;
     height: 568px;
     width: 568px;
+    top: 64px;
+    right: 10px;
+    align-items: flex-end;
+    background-color: blue;
+    z-index: 0;
 }
 
 /* including elements with key-value modifiers */
