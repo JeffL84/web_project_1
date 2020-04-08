@@ -149,45 +149,167 @@
 }
 
 
-.digits__section-title {
-    margin-top: 100px;
-    width: 60%;
-    border: 1px red solid;
-    text-align: center;
+.section-title {
+  margin-top: 100px;
+  width: 60%;
+  border: 1px red solid;
+  text-align: center;
     
     
 }
 
-.digits__section-subtitle {
+.section-subtitle {
   margin-top: 20px;
   width: 60%;
   border: 1px red solid;
   text-align: center;
 }
 
-.digits__table {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 1100px;
   margin-bottom: 100px;
   border: 1px red solid;
   justify-content: space-between;
 }
 
-.digits__table_cell {
-    width: 250px;
-    margin-top: 60px;
-    border: 1px red solid;
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  border: 1px red solid;
     
 
 }
 
-.digits__table_heading {
+.table__heading {
 
 }
 
-.digits__table_text {
+.table__text {
   margin-top: 20px;
   margin-bottom: 0px;
+}
+
+/*start of Feynman section */
+
+.feynman {
+  display: flex;
+  height: 790px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px red solid;
+  background-color: #f2f2f2;
+  background-image: url("C:\Users\jeffl\Desktop\web_project_1\images\feynman.png");
+}
+
+.feynman__title {
+  margin-top: 100px;
+  width: 775px;
+  border: 1px red solid;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.feynman__subtitle {
+  margin-top: 70px;
+  border: 1px red solid;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50% ;
+  right: 48px;
+  border: 1px red solid;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;  
+  /*this is currenlty at the top of the page...not in the section -MUST FIX*/
+}
+
+/* none of this was working...trying to put it in overall division
+
+.feynman__square-pic {
+  width: 867px;
+  height: 637px;
+  position: relative;
+  background-image: url("C:\Users\jeffl\Desktop\web_project_1\images\feynman.png");
+  border: 1px red solid;
+  margin-left: 0px;
+  /*z-index: -1; to make sure it is behind text - may not be necessary since it is a background image... 
+
+}  */
+
+/* Start of Kaufman section */
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px red solid;
+  background-color: #000000;
+  overflow: hidden; /*brief said we will learn about this later*/
+}
+
+.section-title_theme_dark {
+  position: absolute;
+  /*This move it to the top of the page (when 90 px)...not the top of the block - still confused*/
+  top: 90;
+  color: #ffffff;
+  border: 6px red solid;
+  width: 60%;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  /* Don't know what the brief means about it overlapping the right hand border by 210 pixels*/
+}
+
+.section-subtitle_theme_dark {
+  width: 60%;
+  color: #ffffff;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table_theme_dark {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin-bottom: 90px;
+  border: 1px red solid;
+  justify-content: space-between;
+}
+
+.table__cell_theme_dark {
+    width: 200px;
+    margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+    color: #ffff;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.table__element_theme_dark {
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.kaufman__triangle {
+    width: 877px;
+    height: 877px;
+    z-index: -1;
+
 }
