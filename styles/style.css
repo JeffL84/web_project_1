@@ -1,3 +1,13 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
 .page {
     min-width: 1100px;
     /* we don't know how to make mobile versions of websites yet, */
@@ -17,6 +27,7 @@
     /* parameters for the header section */
     background-color: #F2F2F2;
     display: flex;
+    overflow: hidden;
 }
 
 .logo_place_header {
@@ -45,7 +56,6 @@
     bottom: 30px;
     max-width: 388px;
     z-index: 2;
-    /* to keep it "in front of other blocks on smaller screens" */
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
@@ -70,8 +80,6 @@
   width: 765px;
 }
 
-
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
     position: absolute;
     height: 568px;
@@ -80,8 +88,13 @@
     right: 0px;
     background-color: #2F80ED;
     z-index: 0;
+    transform: rotate(-15deg);
+    
 }
 
+.header__square-pic_rotation {
+   animation: rotation 20s linear infinite;
+}
 
 /* beginning of next section of the page */
 
@@ -125,14 +138,95 @@
 .two-columns__span_accent {
   font-weight: bold;
 }
+/* beginning of Learning Techniques section of the page */
+.techniques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 920px;
+  border: 1px solid red;
+}
+
+/* this whole section is not working properly - spacing issues all over the place -*/
+
+.cards__item {
+  margin-top: 0px;
+  
+  border: 1px solid green;
+}
+
+/* missing whole section 1-2 on the titles because I don't understnad rusing te classes */
+
+.cards__image {
+  display: flex;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  margin-top: 60px 40px 43px;
+  border: 1px solid black;
+}
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid red;
+}
+
+.cards__description {
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+/* beginning of vodeo block section of the page  - need to modify section-title and section-subtitle here too*/
+.videos {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px dashed black;
+}
+
+
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  margin: auto;
+}
+
+/* just made up height and width trying things out */
+
+.video__iframe{
+  width: 500px;
+  height: 300px;
+  text-decoration: none;
+  list-style-type: none;
+  border: 1px solid blue;
+}
+
+.video__iframe:nth-of-type(1) {
+  margin-right: 20px;
+}
 
 /* beginning of digits block section of the page */
 .digits {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-
 }
 
 
@@ -143,6 +237,7 @@
   line-height: 69px;
   font-size: 60px;
   font-weight: bold; 
+  border: 5px solid green;
 }
 
 .section-subtitle {
@@ -168,7 +263,6 @@
   margin-top: 60px;
 }
 
-/* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -252,7 +346,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #1f1f1f;
-  overflow: hidden; /*brief said we will learn about this later*/
+  overflow: hidden; 
 }
 
 .section-title_theme_dark {
@@ -298,6 +392,7 @@
   height: 877px;
   background-size: cover;
   background-image: url("../images/triangle.svg");
+  animation: rotation 20s linear infinite;
   z-index: 0; 
 }
 
