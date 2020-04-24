@@ -1,5 +1,12 @@
 .cards__item {
     margin-top: 0px;
     width: 240px;
-    border: 1px solid green;
+    margin-right: 100px;
   }
+
+  .cards__item:nth-of-type(3) {
+    margin-top: 0px;
+    width: 240px;
+    margin-right: 0px;
+  }
+

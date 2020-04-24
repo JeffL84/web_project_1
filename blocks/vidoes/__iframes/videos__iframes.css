@@ -1,8 +1,13 @@
 
 .video__iframes {
-    display: flex;
-    justify-content: center;
-    border: 1px solid red;
-    margin: auto;
+  width: 515px;
+  height: 316px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 80px;
   }
   
+  .video__iframes:nth-of-type(2) {
+    margin-left: 20px;
+    }
