@@ -1,6 +1,8 @@
-#H1 Web Project 2
+# Web Project 2
 
 This is the second project for the Practikum course
+
+## Description
 
 It is just a simple web page but we learned a lot.
 
