@@ -11,7 +11,7 @@
   margin-bottom: 16px;
 }
 
-.footer__column-links:hover {
+.footer__column-links li:hover {
   opacity: 0.3;
-  transition: opacity 1s linear 0.5s;
+
 }

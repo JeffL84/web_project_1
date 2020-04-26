@@ -1,3 +1,4 @@
 .footer__column-link {
   margin-bottom: 16px;
+  transition: opacity 1s linear 0.5s;
 }
